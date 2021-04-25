@@ -2,8 +2,6 @@
 <div id="app"></div>
 <router-view/>
 <main-tab-bar/>
-<!-- <tab-bar-item></tab-bar-item> -->
-<h2>222</h2>
 </template>
 
 <script>

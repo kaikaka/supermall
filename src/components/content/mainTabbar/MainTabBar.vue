@@ -1,17 +1,55 @@
 <template>
   <tab-bar>
     <tab-bar-item path="/home">
-      <img eslint-plugin-vue="item-icon" src="~assets/img/tabbar/home.svg" alt="">
-      <img eslint-plugin-vue="item-icon-active" src="~assets/img/tabbar/home_active.svg" alt="">
-      <div eslint-plugin-vue="item-text">首页</div>
+    <template v-slot:item-icon>
+      <img class="icon-img" src="~/assets/img/tabbar/home.svg" alt="">
+    </template>
+    <template v-slot:item-icon-active>
+      <img class="icon-img" src="~/assets/img/tabbar/home_active.svg" alt="">
+    </template>
+    <template v-slot:item-text>
+      <div>首页</div>
+    </template>
+    </tab-bar-item>
+    <tab-bar-item path="/category">
+    <template v-slot:item-icon>
+      <img class="icon-img" src="~/assets/img/tabbar/category.svg" alt="">
+    </template>
+    <template v-slot:item-icon-active>
+      <img class="icon-img" src="~/assets/img/tabbar/category_active.svg" alt="">
+    </template>
+    <template v-slot:item-text>
+      <div>分类</div>
+    </template>
+    </tab-bar-item>
+    <tab-bar-item path="/cart">
+    <template v-slot:item-icon>
+      <img class="icon-img" src="~/assets/img/tabbar/shopcart.svg" alt="">
+    </template>
+    <template v-slot:item-icon-active>
+      <img class="icon-img" src="~/assets/img/tabbar/shopcart_active.svg" alt="">
+    </template>
+    <template v-slot:item-text>
+      <div>购物车</div>
+    </template>
+    </tab-bar-item>
+     <tab-bar-item path="/profile">
+    <template v-slot:item-icon>
+      <img class="icon-img" src="~/assets/img/tabbar/profile.svg" alt="">
+    </template>
+    <template v-slot:item-icon-active>
+      <img class="icon-img" src="~/assets/img/tabbar/profile_active.svg" alt="">
+    </template>
+    <template v-slot:item-text>
+      <div>我的</div>
+    </template>
     </tab-bar-item>
   </tab-bar>
-  <h2>shshhshss </h2>
 </template>
 
 <script>
   import TabBar from 'components/common/tabbar/TabBar'
-import TabBarItem from '../../common/tabbar/TabBarItem.vue'
+  import TabBarItem from '../../common/tabbar/TabBarItem.vue'
 
   export default {
     name: "MainTabbar",
@@ -23,5 +61,10 @@ import TabBarItem from '../../common/tabbar/TabBarItem.vue'
 </script>
 
 <style scoped>
+
+  .icon-img {
+    height: 24px;
+    width: 24px;
+  }
 
 </style>
