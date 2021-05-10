@@ -48,9 +48,6 @@ export default {
 
   .icon-img {
     display: block;
-    /* display: flex; */
-    /* flex: 1; */
-    /* width: 24px; */
     height: 24px;
     margin-top: 3px;
     margin-bottom: 2px;
