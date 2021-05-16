@@ -1,9 +1,7 @@
-
 <template>
-  <div id='home'>首页</div>  
-<nav-bar>
+<nav-bar class='home-nav'>
   <template v-slot:center>
-  
+  <div id='home'>首页</div>  
   </template>
 </nav-bar>
 </template>
@@ -18,3 +16,11 @@ import NavBar from '../../components/common/navbar/NavBar.vue'
     }
   }
 </script>
+
+<style>
+.home-nav {
+  background-color: var(--color-tint);
+  color: white;
+}
+
+</style>
